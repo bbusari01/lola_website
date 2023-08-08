@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header animated-fade-in">
         <img src={pic1} className="pic1" alt="pic1" />
         <h1>LOLA BUSARI</h1>
         <div className="social-links">
@@ -54,10 +54,10 @@ function App() {
     
           <div className="videos">
             <video controls>
-              <source src={video1} type="video/mp4" />
+              <source src={video2} type="video/mp4" />
             </video>
             <video controls>
-              <source src={video2} type="video/mp4" />
+              <source src={video1} type="video/mp4" />
             </video>
           </div>
           )}
