@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import './App.css';
 import pic1 from './pic1.jpeg';
 import pic2 from './pic2.jpeg'; // Add picture file paths
@@ -10,6 +11,10 @@ import video2 from './video2.mp4'; // Add video file paths
 function App() {
   const email = 'lola@example.com';
 
+  const [showVideos, setShowVideos] = useState(false); // State for toggling videos
+  
+  const toggleVideos = () => {
+    setShowVideos(!showVideos); }
   
 
   return (
@@ -31,6 +36,11 @@ function App() {
             <img src={pic4} alt="pic4" />
           </div>
         <div className="media">
+        <button className="toggle" onClick={toggleVideos}>
+            {showVideos ? 'Hide Showreels' : ' Showreels >'}
+          </button>
+          {showVideos && (
+    
           <div className="videos">
             <video controls>
               <source src={video1} type="video/mp4" />
@@ -39,7 +49,7 @@ function App() {
               <source src={video2} type="video/mp4" />
             </video>
           </div>
-          
+          )}
         </div>
         
       </header>

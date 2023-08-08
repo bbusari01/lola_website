@@ -7,7 +7,7 @@
 .App-header {
   background: linear-gradient(135deg, #34dbc5, #3c8ce7);
   color: white;
-  padding: 150px;
+  padding: 100px;
 }
 
 .pic1 {
@@ -47,6 +47,23 @@ video {
   border-radius: 5px;
 }
 
+.toggle {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 15px;
+  padding: 1px 5px;
+  font-size: 20px;
+  background-color: #034876;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle:hover {
+  background-color: #2980b9;
+}
 
 
 .pictures {
