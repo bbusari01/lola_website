@@ -9,7 +9,7 @@ import video1 from './video1.mp4'; // Add video file paths
 import video2 from './video2.mp4'; // Add video file paths
 
 function App() {
-  const email = 'lola@example.com';
+  const email = 'lolabusari@outlook.com';
 
   const [showVideos, setShowVideos] = useState(false); // State for toggling videos
   
@@ -35,7 +35,18 @@ function App() {
             <img src={pic3} alt="pic3" />
             <img src={pic4} alt="pic4" />
           </div>
+
+          <p className="contact_agents">
+          
+        CLARENDON PERSONAL MANAGEMENT
+        10-12 Bourlet Close, London W1W 7BR
+        Tel: 020 8125 7910
+        Mob: 07590 463428
+        agents@clarendonmanagement.co.uk
+        </p>
+
         <div className="media">
+        
         <button className="toggle" onClick={toggleVideos}>
             {showVideos ? 'Hide Showreels' : ' Showreels >'}
           </button>
