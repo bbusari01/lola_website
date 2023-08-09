@@ -22,11 +22,7 @@ function App() {
       <header className="App-header animated-fade-in">
         <img src={pic1} className="pic1" alt="pic1" />
         <h1>LOLA BUSARI</h1>
-        <div className="social-links">
-          <a className='instagram-link' href="https://www.instagram.com/lolabusari/?hl=en-gb">INSTAGRAM</a>
-          <a className='spotlight-link' href="https://www.spotlight.com/0457-9052-9334">SPOTLIGHT</a>
-          <a className='email-link' href={`mailto:${email}`}>EMAIL</a>
-        </div>
+        
         <p className="intro">
           Step into the world of captivating performances with Lola, a dynamic and accomplished actress hailing from the vibrant city of Greater London, England. With a rich heritage that blends British and Nigerian roots, Lola brings a unique and diverse perspective to her roles, enhancing the authenticity of her characters.
         </p>
@@ -61,9 +57,20 @@ function App() {
             </video>
           </div>
           )}
+
+        
         </div>
         
       </header>
+
+      <footer className='App-footer'>
+      <div className="social-links">
+          <a className='instagram-link' href="https://www.instagram.com/lolabusari/?hl=en-gb">INSTAGRAM</a>
+          <a className='spotlight-link' href="https://www.spotlight.com/0457-9052-9334">SPOTLIGHT</a>
+          <a className='email-link' href={`mailto:${email}`}>CLICK EMAIL</a>
+        </div>
+      </footer>
+    
     </div>
   );
 }
