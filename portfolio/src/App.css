@@ -27,7 +27,7 @@
   background: linear-gradient(135deg, #34dbc5, #3c8ce7, #34dbc5, #3c8ce7, #34dbc5, #3c8ce7, #34dbc5, #3c8ce7);
   color: white;
   padding: 100px;
-  animation: moveGradient 5s linear infinite;
+  animation: moveGradient 10s linear infinite;
   background-size: 200% 200%;
 }
 
